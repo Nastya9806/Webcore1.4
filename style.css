@@ -1,0 +1,181 @@
+body{
+margin: 0;
+position: fixed;
+top: 0;
+left: 0;
+width: 320px;
+height: 1024px;
+
+box-shadow: 10px -40px 60px 20px rgba(122, 140, 153, 0.342);
+}
+
+
+.burger--header{
+
+height: 100px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 20px;
+}
+
+.button--icon{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+border: #FF3E79;
+}
+
+.header__logo{
+width: 100px;
+padding-left: 16px;
+justify-self: flex-start;
+flex-grow: 1;
+
+}
+
+
+
+.burger--close{
+background: url("/img/burger.svg");
+margin-right: 0;
+
+}
+
+
+.search{
+    background: url("/img/search.svg");
+
+    }
+  
+.menu__burger{
+padding: 0;
+display: flex;
+flex-direction: column;
+
+}
+
+.menu__burger li{
+list-style: none;
+padding: 12px 24px;
+margin-left: 0;
+margin-bottom: 5px;
+
+
+}
+
+a{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu__burger .active a::before{
+content: "";
+width: 4px;
+height: 32px;
+position: absolute;
+left: 0;
+background: #41F6D7;
+border-radius: 0 6px 6px 0;
+}
+
+.active a{
+    color: #7E7E82;
+
+}
+
+.menu__burger li:hover{
+box-shadow: 3px 3px 10px 3px rgba(150, 201, 238, 0.342);
+transition-property: all;
+transition-duration: 1s;
+
+}
+
+.contacts__email{
+position: absolute;
+height: 24px;
+width: 106px;
+left: 24px;
+top: 860px;
+
+
+}
+
+a[href^="mailto:"]{
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+}
+
+.contacts__tell{
+    position: absolute;
+    height: 32px;
+    width: 196px;
+    left: 24px;
+    top: 896px;
+
+}
+
+a[href^="tel:"] {
+    font-size: 24px;
+    line-height: 32px;
+    text-decoration: none;
+    font-weight: 700;
+  
+  }
+
+  .contacts__icons{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 24px;
+    margin-top: 268px;
+    
+  }
+.call{
+background-image: url("/img/icon__call.png");
+margin-right: 16px;
+}
+
+.chat{
+background-image: url("/img/icon__chat.png");
+margin-right: 16px;
+
+}
+
+.profile{
+    background-image: url("/img/icon__profile.png");
+    margin-right: 16px;
+}
+
+.language{
+   display: flex;
+   margin-top: 110px;
+   margin-left: 24px;
+   justify-content: flex-start;
+ 
+}
+
+.language__switch{
+    display: inline-block;
+    height: 24px;
+    width: 25px;
+    margin-right: 7px;
+ 
+}
+
+.language__switch a{
+font-size: 16px;
+line-height: 24px;
+color: #1B1C21;
+
+}
+
+.language__active{
+
+color: #7E7E82;
+
+}
